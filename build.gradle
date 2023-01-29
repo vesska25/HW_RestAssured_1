@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'io.freefair.lombok' version "6.0.0-m2"
 }
 
 group 'com.vesska'
@@ -15,7 +16,9 @@ dependencies {
     testImplementation(
             "io.rest-assured:rest-assured:5.3.0",
             "org.junit.jupiter:junit-jupiter:5.9.0",
-            "org.slf4j:slf4j-simple:$slf4jVersion"
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "com.fasterxml.jackson.core:jackson-databind:2.11.2",
+            "org.projectlombok:lombok:1.18.22"
     )
 }
 tasks.withType(Test) {
