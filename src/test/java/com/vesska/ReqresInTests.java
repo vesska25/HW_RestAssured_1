@@ -4,7 +4,7 @@ import com.vesska.models.CreateUser;
 import com.vesska.models.UserData;
 import org.junit.jupiter.api.Test;
 
-import static com.vesska.Specs.*;
+import static com.vesska.specs.Specs.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.core.Is.is;
